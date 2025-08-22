@@ -105,5 +105,5 @@ def import_papers(file_path, conf_path="../../conf.json"):
         print("done!")
 
 if __name__ == "__main__":
-    excel_file_path = input("Enter filepath to Excel file: ")
-    import_papers(excel_file_path)
+    file_path = input("Enter filepath to Excel file: ")
+    import_papers(file_path)

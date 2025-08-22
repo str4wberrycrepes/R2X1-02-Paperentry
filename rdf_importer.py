@@ -137,7 +137,7 @@ def import_to_neo4j(data, conf):
 # -------------------------------
 if __name__ == "__main__":
     # Path to RDF file
-    rdf_path = "C:/Users/davep/Downloads/ont1.rdf"
+    rdf_path = input("Enter filepath to Ontology (rdf) file: ")
 
     # Parse RDF
     ontology_data = parse_rdf(rdf_path)

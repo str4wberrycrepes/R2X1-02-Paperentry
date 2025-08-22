@@ -131,6 +131,47 @@ You will be prompted for the Excel file path.
 
 ---
 
+# 3. Frequency Dictionary Exporter (Excel → SymSpell)
+
+### Purpose
+Reads keywords from an Excel file, counts their frequency, and exports them to a **SymSpell dictionary**.
+
+Output format:
+```
+keyword|frequency
+```
+
+---
+
+### Excel File Format
+The Excel sheet must have a column named **keywords** (case-insensitive).  
+Each cell should contain a comma-separated list of keywords.
+
+**Example:**
+| title        | authors      | keywords                  |
+|--------------|--------------|---------------------------|
+| AI in Health | Smith, John  | AI, Healthcare, Ethics    |
+| Marine Study | Doe, Jane    | Marine, Climate, Ocean    |
+
+---
+
+### Usage
+```bash
+python xlsx_to_frequency_dictionary.py
+```
+
+### Example Output (`symspell_frequency_dictionary.txt`)
+```
+ai|1
+healthcare|1
+ethics|1
+marine|1
+climate|1
+ocean|1
+```
+
+---
+
 ## Notes
 - Scripts **clear the database** before inserting data.  
 - Run them only on an **empty Neo4j database** or you **will** lose existing data.  
