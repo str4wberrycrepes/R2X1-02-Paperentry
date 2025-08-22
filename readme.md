@@ -1,10 +1,10 @@
 # R2X1-02 | R3X2-02 Data Readers/Importers
 
 ## Overview
-This toolkit contains scripts for importing structured data into **Neo4j**.  
-Currently supported:
-- **Ontology Importer** → Parse RDF/OWL ontology files and push them into Neo4j.  
-- **Research Paper Importer** → Import research papers and keywords from Excel spreadsheets into Neo4j.  
+Scripts for importing structured data into **Neo4j**.  
+Scripts:
+- **RDF Importer** → Parse RDF/OWL ontology files and push them into Neo4j.  
+- **XLSX Importer** → Import research papers and keywords from Excel spreadsheets into Neo4j.  
 
 Scripts may assume the Neo4j database you’re pushing into is **empty**.
 
